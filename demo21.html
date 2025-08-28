@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/all.css" rel="stylesheet"/>
+<script src="js/bootstrap.bundle.js"></script>
+        <style>
+            :root{
+                --bgcolor:repeating-linear-gradient( 45deg,#ffbb33 20%,#FF8800 40%);
+                --txtcolor:#FF8800;
+                            }
+                            .bg-mycolor{
+                                background: var(--bgcolor);
+                            }
+                            .txt-mycolor{
+                                color:var(--txtcolor);
+                            }
+                            .ico{
+                                height:30px;width:30px; text-align:center; line-height: 28px; transition: all;
+                            }
+                            .ico:hover{
+                                transform:rotate(360deg);
+                                transition:all,1s;
+                                background: rgba(255,255,255,.0);
+                                color:var(--txtcolor)!important;
+                            }
+                            .form-control{
+                                margin-bottom: 2%;
+                            }
+        </style>
+        </head>
+        <body>
+<div class="container-fluid">
+    <div class="row top1 text-center bg-mycolor ">
+        <div class="col-sm-4">
+            <i class="fa-solid fa-phone"></i> Helpline no. +919935334018 , +916390190229
+        </div>
+        <div class="col-sm-4">
+          Welcome to Fashion card
+        </div>
+        <div class="col-sm-4">
+            <i class="fa-brands fa-facebook ico"></i>
+            <i class="fa-brands fa-instagram ico"></i> 
+            <i class="fa-brands fa-twitter ico"></i>
+            <i class="fa-brands fa-youtube ico"></i>
+            <i class="fa-brands fa-whatsapp ico"></i>
+        </div>
+    </div>
+    <div class="row top2">
+        <div class="col-sm-3 logo py-3">
+            <div class="text-center fs-3">Fanshion <b class="txt-mycolor">Cart</b><i class="fa-solid fa-cart-shopping"></i></div>
+        </div>
+        <div class="col-sm-9 menu ps-5">
+            <!--statr menu-->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/user/index/"><i class="fa-solid fa-house-chimney"></i> Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/user/about/"><i class="fa-solid fa-user"></i> About Us</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/user/gallery/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         <i class="fa-brands fa-product-hunt"></i>Product
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/user/gallery/">
+                              <i class="fa-solid fa-user"></i>Mens</a></li>
+                          <li><a class="dropdown-item" href="/user/video/">
+                             <i class="fa-solid fa-photo-film"></i>womens</a></li>
+                                 <li><a class="dropdown-item" href="/user/video/">
+                             <i class="fa-solid fa-photo-film"></i>Kids</a></li>
+                        </ul>
+                                <li class="nav-item">
+                        <a class="nav-link" href="/user/contact/">
+                           <i class="fa-solid fa-cart-shopping"></i> My Orders</a>
+                      </li>
+                              <li class="nav-item">
+                        <a class="nav-link" href="/user/contact/">
+                            <i class="fa-solid fa-user "></i> My Profile</a>
+                      </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="/user/contact/">
+                           <i class="fa-solid fa-envelope"></i> Customer Support</a>
+                      </li>
+                       <li class="nav-item">
+                        <a class="nav-link" href="/admin">
+                            <i class="fa-solid fa-box"></i> Login</a>
+                      </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/user/fd/">
+                            <i class="fa-solid fa-comments"></i> Feedback</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/user/fd/">
+                            <i class="fa-solid fa-user"></i> Sign Up</a>
+                      </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="/user/fd/">
+                            <i class="fa-solid fa-key"></i> Sign In </a>
+                      </li>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <!--end menu-->
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-sm-8 slider">
+            
+        <!--start slider-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/ambuj1.jpeg" class="d-block w-100" style="height:600px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ambuj2.jpeg" class="d-block w-100" style="height:600px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/ambuj3.jpeg" class="d-block w-100" style="height:600px;" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+           <!--end slider-->
+        </div>
+        <div class="col-sm-4" eform>
+            <input type="text"  class="form-control" placeholder="name"/>
+            <input type="number"class="form-control"  placeholder="number"/>
+            <input type="mo.number" class="form-control" placeholder="password"/>
+            <input type="Email" class="form-control"  placeholder="id"/>
+            <button type="submit" value="save">save</button>
+        </div>
+        <div class="row about us ">
+            <div class=""></div>
+        </div> 
+         <div class="row about us "></div>
+         <div class="row about us "></div>
+         <div class="row about us "></div>
+         <div class="row about us "></div>
+         <div class="row about us "></div>
+
+    </div>
+</div>
+<script src="js/bootstrap.bundle.js"></script>
+        </body>
+        </html>
