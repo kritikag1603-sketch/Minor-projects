@@ -1,0 +1,95 @@
+<html>
+<head>
+<link href="css/bootstrap.css" rel="stylesheet"/>
+<link href="css/all.css" rel="stylesheet"/>
+<style>
+    .a{
+       border: none; 
+       border-radius: 30px;
+       background-color:#80ff80;
+       min-height: 40px;
+       padding-left:9px;
+    }
+    :root{
+--blue:linear-gradient(45deg,#1781dd,#17dda8);
+}
+.blue{
+background:var(--blue) !important;
+}
+.c{
+    min-height: 50px;
+}
+
+</style>
+</head>
+<body style="background: url('images/shop-1.jpg');background-size: cover;padding:0px 100px;">
+<div class="container bg-light my-3 p-4">
+<div class="row mb-3">
+<div class="col-sm-12">
+    <h4 class="text-center">REGISTRATION FORM</h4>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<b>Name</b><br/>
+<input type="text" placeholder="Enter Your Name" class="w-100 a"/><br/><br/>
+<b>Password</b><br/>
+<input type="password" placeholder="Enter Your Password" class="w-100 a"/><br/><br/>
+<b>Email</b><br/>
+<input type="email" placeholder="Enter Your Email" class="w-100 a"/><br/><br/>
+</div>
+<div class="col-sm-6">
+<b>Mobile</b><br/>
+<input type="number" placeholder="Enter Your Mobile number" class="w-100 a"/><br/><br/>
+<b>Confirm Password</b><br/>
+<input type="password" placeholder="Enter Confirm Password" class="w-100 a"/><br/><br/>
+<b>Upload Image</b><br/>
+<input  type="file" value="image" name="image" multiple class="w-100 a text-secondary ps-3"/><br/>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<b>Address</b><br/>
+<textarea name="address" id="" cols="10" rows="3" class="w-100 a text-secondary ps-4" placeholder="Enter Your Message.."></textarea>
+<br/><input type="checkbox"/> I aceept the terms of Use & Privacy Policy.<br/><br/><br/>
+<button class="form-control a  w-25 mx-auto" style="background:#64dd17;color:#ffffff">REGISTRATION NOW</button>
+<p class="text-center"><span style="color: #64dd17;">Already have an account?</span><b>
+<!--start modal-->
+<!-- Button trigger modal -->
+<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="text-decoration: none;color: black;">LOGIN HERE</a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content  blue ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"> <h3><b>Sign -in Here</b></h3></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                   
+                    <hr style="color: #ffffff;height:9px;"/>
+                    <input type="email" placeholder="Enter Your Mail...." class="w-100 c ps-3"/>
+                    <br/><br/>
+                    <input type="password" placeholder="Enter Your Password..." class="c w-100 ps-3"/>
+                    <br/><br/><br/><br/>
+                    <button class="form-control c  w-25 mx-auto" style="background:goldenrod;color:#ffffff">LOGIN</button>
+                    <br/><br/>
+                    <p class="text-center">Have not account yet? <a href="#" style="text-decoration: none;color: black;"><b>SIGNUP</b></a></p>
+                </div>
+            </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+<!--end modal-->
+</div>
+</div>
+</div>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+ </html>

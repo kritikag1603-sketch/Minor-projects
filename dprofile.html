@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/all.css" rel="stylesheet"/>
+    <style>
+    :root{
+    --mycolor:#64dd17;
+    }
+    .bg-mycolor{
+    background:var(--mycolor) !important;
+    }
+    .text-mycolor{
+    color:#64dd17 !important;
+    }
+    .top3 li:hover{
+    background:var(--mycolor) !important;
+    }
+    .a{
+               min-height: 50px;
+            }
+            .b{
+                min-height: 40px;
+                background: goldenrod;
+                padding: 5px;
+                border: none;
+                border-radius: 3px;
+            }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row top1 text-center p-4 bg-light">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+      <i class="fa-solid fa-envelope"></i>
+      anjana123@gmail.com
+      </div>
+      <div class="col-sm-3">
+      <i class="fa-solid fa-phone"></i>
+      +91 1800 000 0000
+      </div>
+      <div class="col-sm-4 text-end">
+      <i class="fa-brands fa-square-facebook"></i>&nbsp;&nbsp;&nbsp;
+      <i class="fa-brands fa-square-twitter"></i>&nbsp;&nbsp;&nbsp;
+      <i class="fa-brands fa-square-instagram"></i>&nbsp;&nbsp;&nbsp;
+      <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;&nbsp;
+      </div>
+      <div class="col-sm-1"></div>
+      </div>
+      
+      <div class="row top2 p-3">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3 fs-4">
+      Desire <b class="text-mycolor">Cart<i class="fa-solid fa-cart-shopping"></i></b>
+      </div>
+      <div class="col-sm-4">
+      <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn bg-mycolor text-light" type="submit">Search</button>
+            </form>
+      </div>
+      <div class="col-sm-3 text-end fs-5">
+      <b class="text-mycolor"><i class="fa-solid fa-cart-shopping"></i></b>
+      </div>
+      <div class="col-sm-1"></div>
+      </div>
+      <div class="row top3">
+      <div class="col-sm-12 bg-dark p-1">
+      <!--start nav-->
+      <nav class="navbar navbar-expand-lg bg-body-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-mycolor" href="#"><b>DESIRECART</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="desire_cart.html" target="blank"><i class="fa-solid fa-house"></i> HOME</a>
+              </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <i class="fa-brands fa-product-hunt"></i> PRODUCT
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">MEN'S</a></li>
+                  <li><a class="dropdown-item" href="#">WOMEN'S</a></li>
+                  <li><a class="dropdown-item" href="#">KID'S</a></li>
+                </ul>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i> MY ORDERS</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-user"></i> MY PROFILE</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="desire_form.html" target="blank"><i class="fa-solid fa-phone"></i> CUSTOMER SUPPORT</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="desire_contact.html" target="blank"><i class="fa-solid fa-user"></i> SIGN-UP</a>
+              </li>
+      <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-key"></i> SIGN-IN</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      <!--end nav-->
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 mt-5 bg-light">
+          <h3 class="text-center">MY PROFILE</h3>
+        </div>
+      </div>
+     <div class="row" style="margin:50px;">
+        <div class="col-sm-6" style="padding-left: 300px;">
+           <img src="images/my pic.jpg" style="height: 210px;width: 210px;border: 1px solid black;"/>
+        </div>
+        <div class="col-sm-6">
+          <p><b>NAME :</b> Anjana Mishra</p>
+          <p><b>MOBILE :</b> +91 1800 000 0000</p>
+          <p><b>EMAIL :</b> anjana123@gmail.com</p>
+           <p><b>ADDRESS :</b> Shuklaganj, Unnao, Uttar Pradesh</p>
+           
+           <!--start modal-->
+           <!-- Button trigger modal -->
+<button type="button" class="form-control w-25" style="background:goldenrod;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Edit Profile
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+              <span class="text-light">Name</span><br/>
+          <input type="text" placeholder="Enter Your Name" class="a w-100 ps-3"/><br/>
+          <span class="text-light">Mobile</span><br/>
+          <input type="number" placeholder="Enter Your Mobile Number" class="a w-100 ps-3"/><br/>
+          <span class="text-light">Email</span><br/>
+          <input type="email" placeholder="Enter Your Email" class="a w-100 ps-3"/><br/>
+          <span class="text-light">Picture</span><br/>
+          <input type="file" value="image" name="image" multiple class="a w-100 ps-3 bg-light text-secondary"/><br/>
+          <span class="text-light">Address</span><br/>
+          <textarea rows="5" cols="30" class="a w-100 ps-3 text-secondary" placeholder="Enter Your Address"></textarea><br/><br/>
+          <button type="submit" class="b w-25">UPDATE</button>
+
+          </div>
+      </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+           <!--end modal-->
+        </div>
+     </div>
+     
+      <div class="row footer bg-dark">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3 pt-4">
+      <span class="text-light fs-5">Desire</span> <b class="text-mycolor fs-3">Cart<i class="fa-solid fa-cart-shopping"></i></b><br/><br/>
+      <p class="text-light">Address : Unnao ,Uttar Pradesh,209861</p>
+      <p class="text-light">Phone : 9415153996</p>
+      <p class="text-light">Email : anjana123@gmail.com</p>
+      </div>
+      <div class="col-sm-2 pt-4">
+      <p class="text-light fs-5">Information</p>
+      <p class="text-light">About Us</p>
+      <p class="text-light">Checkout</p>
+      <p class="text-light">Contact</p>
+      </div>
+      <div class="col-sm-2 pt-4">
+      <p class="text-light fs-5">My Account</p>
+      <p class="text-light">My Account</p>
+      <p class="text-light">Contact</p>
+      <p class="text-light">Shopping Cart</p>
+      </div>
+      <div class="col-sm-3 pt-4">
+      <p class="text-light fs-5">Join Our Newsletter Now</p>
+      <p class="text-light">Get E-mail update about our latest shop and special offer</p>
+      <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Enter Your Mail..." aria-label="Search">
+              <button class="btn bg-mycolor text-light" type="submit">SUBSCRIBE</button>
+            </form>
+      </div>
+      <div class="col-sm-1"></div>
+      </div>
+      </div>
+      <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
