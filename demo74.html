@@ -1,0 +1,48 @@
+<html>
+    <head><title>Animation Button</title>
+    <style>
+         
+        div{
+               height:50px; width:200px; margin:60px 70px; float:left;
+               background:linear-gradient(blue, white,red); FONT-SIZE:30PX;
+               TEXT-ALIGN:CENTER;
+            BORDER:5PX SOLID NAVY; box-shadow: 5PX 5PX 5px ; BORDER-RADIUS:10PX; 
+            color:yellow; text-align:center; line-height: 30px;
+        }
+        @keyframes butn {
+            from{
+                background:linear-gradient(360deg,black,white,yellow);
+            }
+            to{
+                background: repeating-linear-gradient(45deg,green,red,aqua)5%,rgb(231,205,213)10%, ;
+                box-shadow:0px 0px 2px 10px;   border-color: aqua;
+            }
+        }.btn{
+          
+           animation-name: butn;
+           animation-duration: 2s;
+           animation-iteration-count: infinite; 
+           animation-direction:  alternate;
+           
+        }
+        .btttn{
+            animation-duration: 10s; 
+             float:left;
+           animation-iteration-count: infinite;
+           animation-name:butn;
+           animation-play-state:inherit; 
+           animation-direction: alternate-reverse;          
+        }
+    </style></head>
+    <body>
+        
+            <div class="btn">BUTTON </div>
+            <div class="btttn">BUTTON</div>
+            <div class="btn">BUTTON </div>
+            <div class="btttn">BUTTON</div><div class="btn">BUTTON </div>
+            <div class="btttn">BUTTON</div>
+            <div class="btn">BUTTON </div>
+            <div class="btttn">BUTTON</div>
+        
+    </body>
+</html>
