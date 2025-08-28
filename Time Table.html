@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/table.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+<body style="background-color: blanchedalmond;">
+    <h1 style="text-align: center; text-decoration: underline;">Time Table</h1>
+
+    <table border="5" align="center">
+<tbody><tr>
+    <td align="center" height="50" width="100">Day/Period</td>
+    <td align="center" height="50" width="100">1 <br> 09:20-10:30</td>
+    <td align="center" height="50" width="100">2 <br> 10:20-11:10</td>
+    <td align="center" height="50" width="100">3 <br> 11:10-12:00</td>
+    <td align="center" height="50" width="100">4 <br> 12:00-12:40</td>
+    <td align="center" height="50" width="100">5 <br> 12:40-1:30</td>
+    <td align="center" height="50" width="100">6 <br> 01:30-02:20</td>
+    <td align="center" height="50" width="100">7 <br> 02:20-03:10</td>
+    <td align="center" height="50" width="100">8 <br> 03:10-04:00</td>
+</tr>
+<tr>
+    <td align="center " height="50">Monday</td>
+    <td align="center " height="50">Eng</td>
+    <td align="center " height="50">Math</td>
+    <td align="center " height="50">Chem</td>
+    <td align="center " height="50" rowspan="6">Lunch</td>
+    <td align="center " height="50" colspan="3">Lab</td>
+    <td align="center " height="50">Phy</td>
+</tr>
+<tr>
+    <td align="center " height="50">Tuesday</td>
+    <td align="center " height="50" colspan="3">Lab</td>
+  
+    <td align="center " height="50">Eng</td>
+    <td align="center " height="50">Chem</td>
+    
+    <td align="center " height="50">Math</td>
+    <td align="center " height="50">Sports</td></tr>
+<tr>
+    <td align="center " height="50">Wednesday</td>
+    <td align="center " height="50">Math</td>
+    <td align="center " height="50">Phy</td>
+    <td align="center " height="50">Eng</td>
+   
+    <td align="center " height="50">Chem</td>
+    <td align="center " height="50" colspan="3">Library</td>
+  
+</tr>
+<tr>
+    <td align="center " height="50">Thrusday</td>
+    <td align="center " height="50">Phy</td>
+    <td align="center " height="50">Eng</td>
+    <td align="center " height="50">Chem</td>
+   
+    <td align="center " height="50" colspan="3">Lab</td>
+    <td align="center " height="50">Math</td>
+
+
+</tr>
+<tr>
+    <td align="center " height="50">Friday</td>
+    <td align="center " height="50" colspan="3">Lab</td>
+  
+    <td align="center " height="50">Math</td>
+    <td align="center " height="50">Chem</td>
+    <td align="center " height="50">Eng</td>
+    <td align="center " height="50">Phy</td>
+</tr>
+<tr>
+    <td align="center " height="50">Saturday</td>
+    <td align="center " height="50">Eng</td>
+    <td align="center " height="50">Chem</td>
+    <td align="center " height="50">Math</td>
+    
+    <td align="center " height="50" colspan="3">Seminar</td>
+    <td align="center " height="50">Sports</td>
+
+</tr>
+
+
+
+    </tbody></table>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
